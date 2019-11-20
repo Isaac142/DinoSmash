@@ -4,9 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - Vehicle
+  - Car
   - Bike
   - Truck
-  - Car
   layers:
   - Default
   - TransparentFX
