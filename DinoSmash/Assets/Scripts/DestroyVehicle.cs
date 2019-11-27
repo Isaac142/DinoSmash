@@ -14,7 +14,9 @@ public class DestroyVehicle : MonoBehaviour
 
     public bool isOver = false;
     public GameObject isOverGO;
+    public Text overText;
 
+    public PlayerMovement PM;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +24,7 @@ public class DestroyVehicle : MonoBehaviour
         score = 0;
         SetScoreText();
         timer = 30f;
-        
+        PM = GetComponent<PlayerMovement>();
     }
 
     // Update is called once per frame
@@ -42,6 +44,7 @@ public class DestroyVehicle : MonoBehaviour
         {
             isOverGO.SetActive(true);
             timer = 0f;
+            PM.canMove = false;
         }
         else
         {
@@ -85,5 +88,6 @@ public class DestroyVehicle : MonoBehaviour
     void SetScoreText()
     {
         scoreText.text = "Score: " + score.ToString();
+        overText.text = "YOUR FINAL SCORE: " + score.ToString();
     }
 }

@@ -4130,7 +4130,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 422556152}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1805388301}
+        m_MethodName: RestartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &422556152
@@ -4565,7 +4576,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 473902889}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1805388301}
+        m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &473902889
@@ -14919,6 +14941,7 @@ MonoBehaviour:
   leftPivot: {fileID: 1694814231}
   rightPivot: {fileID: 1734413637}
   rotateSpeed: 100
+  canMove: 0
 --- !u!114 &1764613998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14937,6 +14960,8 @@ MonoBehaviour:
   timer: 0
   isOver: 0
   isOverGO: {fileID: 1326824844}
+  overText: {fileID: 621140847}
+  PM: {fileID: 1764613996}
 --- !u!1001 &1787046368
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15090,6 +15115,7 @@ GameObject:
   - component: {fileID: 1805388299}
   - component: {fileID: 1805388298}
   - component: {fileID: 1805388297}
+  - component: {fileID: 1805388301}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -15178,6 +15204,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1805388301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1805388296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4dbc4603a8970945980376b642ee3e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1818486506
 PrefabInstance:
   m_ObjectHideFlags: 0
